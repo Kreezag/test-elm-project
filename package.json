@@ -1,0 +1,14 @@
+{
+  "name": "firstelmproj",
+  "version": "1.0.0",
+  "description": "test elm project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "elm"
+  ],
+  "author": "",
+  "license": "ISC"
+}

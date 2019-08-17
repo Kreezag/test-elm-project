@@ -15,6 +15,7 @@ import Bootstrap.Card.Block as Block
 import Bootstrap.Button as Button
 import Bootstrap.ListGroup as Listgroup
 import Bootstrap.Modal as Modal
+import Components.ModulesPage as ModulesPage
 
 
 type alias Flags =
@@ -167,7 +168,7 @@ mainContent model =
                 pageGettingStarted model
 
             Modules ->
-                pageModules model
+                pageModules
 
             NotFound ->
                 pageNotFound
@@ -218,15 +219,9 @@ pageGettingStarted model =
     ]
 
 
-pageModules : Model -> List (Html Msg)
-pageModules model =
-    [ h1 [] [ text "Modules" ]
-    , Listgroup.ul
-        [ Listgroup.li [] [ text "Alert" ]
-        , Listgroup.li [] [ text "Badge" ]
-        , Listgroup.li [] [ text "Card" ]
-        ]
-    ]
+pageModules : List (Html msg)
+pageModules = 
+    ModulesPage.view
 
 
 pageNotFound : List (Html Msg)

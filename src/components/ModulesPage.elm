@@ -1,8 +1,7 @@
 module Components.ModulesPage exposing (..)
 
-
-import Html exposing (..)
 import Bootstrap.ListGroup as Listgroup
+import Html exposing (..)
 
 
 view : List (Html msg)
